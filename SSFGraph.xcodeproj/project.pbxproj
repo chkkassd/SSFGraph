@@ -12,7 +12,43 @@
 		91D5D05020C7CAE900F503EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D5D04E20C7CAE900F503EC /* Main.storyboard */; };
 		91D5D05220C7CAEA00F503EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D5D05120C7CAEA00F503EC /* Assets.xcassets */; };
 		91D5D05520C7CAEA00F503EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D5D05320C7CAEA00F503EC /* LaunchScreen.storyboard */; };
+		91D5D06520C7CBAD00F503EC /* SSFGraphKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 91D5D06320C7CBAD00F503EC /* SSFGraphKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91D5D06820C7CBAD00F503EC /* SSFGraphKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D5D06120C7CBAD00F503EC /* SSFGraphKit.framework */; };
+		91D5D06920C7CBAD00F503EC /* SSFGraphKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91D5D06120C7CBAD00F503EC /* SSFGraphKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91D5D07820C7CBD000F503EC /* SSFLineGraphProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D06F20C7CBD000F503EC /* SSFLineGraphProtocol.swift */; };
+		91D5D07920C7CBD000F503EC /* SSFScatterGraphProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D07020C7CBD000F503EC /* SSFScatterGraphProtocol.swift */; };
+		91D5D07A20C7CBD000F503EC /* SSFGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D07120C7CBD000F503EC /* SSFGraphView.swift */; };
+		91D5D07B20C7CBD000F503EC /* SSFLineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D07220C7CBD000F503EC /* SSFLineGraphView.swift */; };
+		91D5D07C20C7CBD000F503EC /* SSFBarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D07320C7CBD000F503EC /* SSFBarGraphView.swift */; };
+		91D5D07D20C7CBD000F503EC /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D07420C7CBD000F503EC /* Utility.swift */; };
+		91D5D07E20C7CBD000F503EC /* SSFGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D07520C7CBD000F503EC /* SSFGraph.swift */; };
+		91D5D07F20C7CBD000F503EC /* SSFScatterGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D07620C7CBD000F503EC /* SSFScatterGraphView.swift */; };
+		91D5D08020C7CBD000F503EC /* SSFBarGraphProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D07720C7CBD000F503EC /* SSFBarGraphProtocol.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91D5D06620C7CBAD00F503EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91D5D03F20C7CAE900F503EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91D5D06020C7CBAD00F503EC;
+			remoteInfo = SSFGraphKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		91D5D06D20C7CBAD00F503EC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				91D5D06920C7CBAD00F503EC /* SSFGraphKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		91D5D04720C7CAE900F503EC /* SSFGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSFGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +58,30 @@
 		91D5D05120C7CAEA00F503EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91D5D05420C7CAEA00F503EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91D5D05620C7CAEA00F503EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91D5D06120C7CBAD00F503EC /* SSFGraphKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSFGraphKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91D5D06320C7CBAD00F503EC /* SSFGraphKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSFGraphKit.h; sourceTree = "<group>"; };
+		91D5D06420C7CBAD00F503EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91D5D06F20C7CBD000F503EC /* SSFLineGraphProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSFLineGraphProtocol.swift; sourceTree = "<group>"; };
+		91D5D07020C7CBD000F503EC /* SSFScatterGraphProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSFScatterGraphProtocol.swift; sourceTree = "<group>"; };
+		91D5D07120C7CBD000F503EC /* SSFGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSFGraphView.swift; sourceTree = "<group>"; };
+		91D5D07220C7CBD000F503EC /* SSFLineGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSFLineGraphView.swift; sourceTree = "<group>"; };
+		91D5D07320C7CBD000F503EC /* SSFBarGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSFBarGraphView.swift; sourceTree = "<group>"; };
+		91D5D07420C7CBD000F503EC /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		91D5D07520C7CBD000F503EC /* SSFGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSFGraph.swift; sourceTree = "<group>"; };
+		91D5D07620C7CBD000F503EC /* SSFScatterGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSFScatterGraphView.swift; sourceTree = "<group>"; };
+		91D5D07720C7CBD000F503EC /* SSFBarGraphProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSFBarGraphProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		91D5D04420C7CAE900F503EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D5D06820C7CBAD00F503EC /* SSFGraphKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91D5D05D20C7CBAD00F503EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				91D5D04920C7CAE900F503EC /* SSFGraph */,
+				91D5D06220C7CBAD00F503EC /* SSFGraphKit */,
 				91D5D04820C7CAE900F503EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				91D5D04720C7CAE900F503EC /* SSFGraph.app */,
+				91D5D06120C7CBAD00F503EC /* SSFGraphKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,17 +112,70 @@
 		91D5D04920C7CAE900F503EC /* SSFGraph */ = {
 			isa = PBXGroup;
 			children = (
-				91D5D04A20C7CAE900F503EC /* AppDelegate.swift */,
+				91D5D08220C7CBF200F503EC /* Supporting */,
 				91D5D04C20C7CAE900F503EC /* ViewController.swift */,
 				91D5D04E20C7CAE900F503EC /* Main.storyboard */,
-				91D5D05120C7CAEA00F503EC /* Assets.xcassets */,
-				91D5D05320C7CAEA00F503EC /* LaunchScreen.storyboard */,
-				91D5D05620C7CAEA00F503EC /* Info.plist */,
 			);
 			path = SSFGraph;
 			sourceTree = "<group>";
 		};
+		91D5D06220C7CBAD00F503EC /* SSFGraphKit */ = {
+			isa = PBXGroup;
+			children = (
+				91D5D06E20C7CBD000F503EC /* Source */,
+				91D5D08120C7CBDB00F503EC /* Supporting */,
+			);
+			path = SSFGraphKit;
+			sourceTree = "<group>";
+		};
+		91D5D06E20C7CBD000F503EC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				91D5D06F20C7CBD000F503EC /* SSFLineGraphProtocol.swift */,
+				91D5D07020C7CBD000F503EC /* SSFScatterGraphProtocol.swift */,
+				91D5D07120C7CBD000F503EC /* SSFGraphView.swift */,
+				91D5D07220C7CBD000F503EC /* SSFLineGraphView.swift */,
+				91D5D07320C7CBD000F503EC /* SSFBarGraphView.swift */,
+				91D5D07420C7CBD000F503EC /* Utility.swift */,
+				91D5D07520C7CBD000F503EC /* SSFGraph.swift */,
+				91D5D07620C7CBD000F503EC /* SSFScatterGraphView.swift */,
+				91D5D07720C7CBD000F503EC /* SSFBarGraphProtocol.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		91D5D08120C7CBDB00F503EC /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				91D5D06320C7CBAD00F503EC /* SSFGraphKit.h */,
+				91D5D06420C7CBAD00F503EC /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		91D5D08220C7CBF200F503EC /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				91D5D04A20C7CAE900F503EC /* AppDelegate.swift */,
+				91D5D05120C7CAEA00F503EC /* Assets.xcassets */,
+				91D5D05320C7CAEA00F503EC /* LaunchScreen.storyboard */,
+				91D5D05620C7CAEA00F503EC /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		91D5D05E20C7CBAD00F503EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D5D06520C7CBAD00F503EC /* SSFGraphKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		91D5D04620C7CAE900F503EC /* SSFGraph */ = {
@@ -74,15 +185,35 @@
 				91D5D04320C7CAE900F503EC /* Sources */,
 				91D5D04420C7CAE900F503EC /* Frameworks */,
 				91D5D04520C7CAE900F503EC /* Resources */,
+				91D5D06D20C7CBAD00F503EC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				91D5D06720C7CBAD00F503EC /* PBXTargetDependency */,
 			);
 			name = SSFGraph;
 			productName = SSFGraph;
 			productReference = 91D5D04720C7CAE900F503EC /* SSFGraph.app */;
 			productType = "com.apple.product-type.application";
+		};
+		91D5D06020C7CBAD00F503EC /* SSFGraphKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91D5D06A20C7CBAD00F503EC /* Build configuration list for PBXNativeTarget "SSFGraphKit" */;
+			buildPhases = (
+				91D5D05C20C7CBAD00F503EC /* Sources */,
+				91D5D05D20C7CBAD00F503EC /* Frameworks */,
+				91D5D05E20C7CBAD00F503EC /* Headers */,
+				91D5D05F20C7CBAD00F503EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSFGraphKit;
+			productName = SSFGraphKit;
+			productReference = 91D5D06120C7CBAD00F503EC /* SSFGraphKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +226,9 @@
 				ORGANIZATIONNAME = "PETER SHI";
 				TargetAttributes = {
 					91D5D04620C7CAE900F503EC = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					91D5D06020C7CBAD00F503EC = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
 				};
@@ -113,6 +247,7 @@
 			projectRoot = "";
 			targets = (
 				91D5D04620C7CAE900F503EC /* SSFGraph */,
+				91D5D06020C7CBAD00F503EC /* SSFGraphKit */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +263,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		91D5D05F20C7CBAD00F503EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +282,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		91D5D05C20C7CBAD00F503EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D5D07A20C7CBD000F503EC /* SSFGraphView.swift in Sources */,
+				91D5D07920C7CBD000F503EC /* SSFScatterGraphProtocol.swift in Sources */,
+				91D5D07D20C7CBD000F503EC /* Utility.swift in Sources */,
+				91D5D07F20C7CBD000F503EC /* SSFScatterGraphView.swift in Sources */,
+				91D5D07B20C7CBD000F503EC /* SSFLineGraphView.swift in Sources */,
+				91D5D08020C7CBD000F503EC /* SSFBarGraphProtocol.swift in Sources */,
+				91D5D07C20C7CBD000F503EC /* SSFBarGraphView.swift in Sources */,
+				91D5D07820C7CBD000F503EC /* SSFLineGraphProtocol.swift in Sources */,
+				91D5D07E20C7CBD000F503EC /* SSFGraph.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91D5D06720C7CBAD00F503EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91D5D06020C7CBAD00F503EC /* SSFGraphKit */;
+			targetProxy = 91D5D06620C7CBAD00F503EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		91D5D04E20C7CAE900F503EC /* Main.storyboard */ = {
@@ -279,10 +445,11 @@
 		91D5D05A20C7CAEA00F503EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MYUZ5TW9JQ;
-				INFOPLIST_FILE = SSFGraph/Info.plist;
+				INFOPLIST_FILE = SSFGraph/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +464,11 @@
 		91D5D05B20C7CAEA00F503EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MYUZ5TW9JQ;
-				INFOPLIST_FILE = SSFGraph/Info.plist;
+				INFOPLIST_FILE = SSFGraph/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +477,62 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		91D5D06B20C7CBAD00F503EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MYUZ5TW9JQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SSFGraphKit/Supporting/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssf.SSFGraphKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		91D5D06C20C7CBAD00F503EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MYUZ5TW9JQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SSFGraphKit/Supporting/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssf.SSFGraphKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -329,6 +553,15 @@
 			buildConfigurations = (
 				91D5D05A20C7CAEA00F503EC /* Debug */,
 				91D5D05B20C7CAEA00F503EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91D5D06A20C7CBAD00F503EC /* Build configuration list for PBXNativeTarget "SSFGraphKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91D5D06B20C7CBAD00F503EC /* Debug */,
+				91D5D06C20C7CBAD00F503EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
