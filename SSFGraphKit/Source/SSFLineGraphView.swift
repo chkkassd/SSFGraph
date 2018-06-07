@@ -65,11 +65,22 @@ public class SSFLineGraphView: SSFBarGraphView, SSFLineGraphProtocol {
         super.init(coder: aDecoder)
     }
     
+    private func drawSpaceLine(context: CGContext, diagram: Diagram, rect: CGRect) {
+        guard let distance = spaceLineDistanceFromTop(diagram: diagram, rect: rect) else {return}
+        context.saveGState()
+        context.setStrokeColor(UIColor.black.cgColor)
+        context.move(to: CGPoint(x: 0.0, y: distance))
+        context.addLine(to: CGPoint(x: rect.width, y: distance))
+        context.strokePath()
+        context.restoreGState()
+    }
+    
     override public func draw(_ rect: CGRect) {
         guard let diagram = combinedDiagram, let points = drawPoints else {return}
         let context = UIGraphicsGetCurrentContext()
         context?.draw(diagram, in: rect)
         context?.draw(points: points, lineColor: lineColor, lineWidth: lineWidth, isOutStanding: isOutstanding)
+        drawSpaceLine(context: context!, diagram: diagram, rect: rect)
     }
 }
 

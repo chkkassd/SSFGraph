@@ -19,35 +19,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvU-cU-ejM">
-                                <rect key="frame" x="164" y="148" width="46" height="30"/>
+                                <rect key="frame" x="164" y="254" width="46" height="30"/>
                                 <state key="normal" title="折线图"/>
                                 <connections>
                                     <segue destination="cz4-HG-Buc" kind="show" id="76w-fU-CSv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ap3-z4-Iqz">
-                                <rect key="frame" x="164.5" y="84" width="46" height="30"/>
-                                <state key="normal" title="柱状图"/>
-                                <connections>
-                                    <segue destination="smI-zp-rP6" kind="show" id="R5g-Hq-kpO"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFx-Z6-CUr">
-                                <rect key="frame" x="164" y="213" width="46" height="30"/>
+                                <rect key="frame" x="164" y="370" width="46" height="30"/>
                                 <state key="normal" title="散点图"/>
                                 <connections>
                                     <segue destination="wHX-RB-S6k" kind="show" id="lgO-ek-3zU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ap3-z4-Iqz">
+                                <rect key="frame" x="164" y="143" width="46" height="30"/>
+                                <state key="normal" title="柱状图"/>
+                                <connections>
+                                    <segue destination="smI-zp-rP6" kind="show" id="R5g-Hq-kpO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emC-lH-ZOM">
+                                <rect key="frame" x="148.5" y="487" width="77" height="30"/>
+                                <state key="normal" title="自定义图表"/>
+                                <connections>
+                                    <segue destination="Jfq-rJ-L7F" kind="show" id="bT4-vf-xIG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jvU-cU-ejM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Q3-ij-hxg"/>
-                            <constraint firstItem="Ap3-z4-Iqz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dq2-yw-Y8H"/>
-                            <constraint firstItem="gFx-Z6-CUr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OXx-q5-vAv"/>
-                            <constraint firstItem="jvU-cU-ejM" firstAttribute="top" secondItem="Ap3-z4-Iqz" secondAttribute="bottom" constant="34" id="T4t-w8-RBE"/>
-                            <constraint firstItem="gFx-Z6-CUr" firstAttribute="top" secondItem="jvU-cU-ejM" secondAttribute="bottom" constant="35" id="amP-vh-5Bn"/>
-                            <constraint firstItem="Ap3-z4-Iqz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="x3A-go-ksx"/>
+                            <constraint firstItem="emC-lH-ZOM" firstAttribute="top" secondItem="gFx-Z6-CUr" secondAttribute="bottom" constant="87" id="2hx-QU-f21"/>
+                            <constraint firstItem="jvU-cU-ejM" firstAttribute="top" secondItem="Ap3-z4-Iqz" secondAttribute="bottom" constant="81" id="5cV-h9-1zb"/>
+                            <constraint firstItem="gFx-Z6-CUr" firstAttribute="top" secondItem="jvU-cU-ejM" secondAttribute="bottom" constant="86" id="Dpv-9T-Shm"/>
+                            <constraint firstItem="Ap3-z4-Iqz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dso-Yu-R9R"/>
+                            <constraint firstItem="emC-lH-ZOM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OsX-qP-wLB"/>
+                            <constraint firstItem="gFx-Z6-CUr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P6g-DM-1KK"/>
+                            <constraint firstItem="jvU-cU-ejM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XEK-vq-E4c"/>
+                            <constraint firstItem="Ap3-z4-Iqz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="79" id="tHo-zr-WIg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -71,6 +80,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLR-jc-73i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1825" y="-344"/>
+        </scene>
+        <!--Custom View Controller-->
+        <scene sceneID="fPf-OY-3ks">
+            <objects>
+                <viewController id="Jfq-rJ-L7F" customClass="CustomViewController" customModule="SSFGraph" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SEm-XA-eP4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fYF-ml-3U0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aVB-gA-c4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="-546"/>
         </scene>
         <!--Line View Controller-->
         <scene sceneID="0WR-zw-I1g">

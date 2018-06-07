@@ -17,7 +17,6 @@
 		91D5D06920C7CBAD00F503EC /* SSFGraphKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91D5D06120C7CBAD00F503EC /* SSFGraphKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91D5D07820C7CBD000F503EC /* SSFLineGraphProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D06F20C7CBD000F503EC /* SSFLineGraphProtocol.swift */; };
 		91D5D07920C7CBD000F503EC /* SSFScatterGraphProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D07020C7CBD000F503EC /* SSFScatterGraphProtocol.swift */; };
-		91D5D07A20C7CBD000F503EC /* SSFGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D07120C7CBD000F503EC /* SSFGraphView.swift */; };
 		91D5D07B20C7CBD000F503EC /* SSFLineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D07220C7CBD000F503EC /* SSFLineGraphView.swift */; };
 		91D5D07C20C7CBD000F503EC /* SSFBarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D07320C7CBD000F503EC /* SSFBarGraphView.swift */; };
 		91D5D07D20C7CBD000F503EC /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D07420C7CBD000F503EC /* Utility.swift */; };
@@ -27,6 +26,8 @@
 		91D5D08820C902BA00F503EC /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D08720C902BA00F503EC /* BarViewController.swift */; };
 		91D5D08A20C902C600F503EC /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D08920C902C600F503EC /* LineViewController.swift */; };
 		91D5D08C20C902D600F503EC /* ScatterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D08B20C902D600F503EC /* ScatterViewController.swift */; };
+		91D5D09020C9274600F503EC /* CustomGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D08F20C9274600F503EC /* CustomGraphView.swift */; };
+		91D5D09220C92B7800F503EC /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D09120C92B7800F503EC /* CustomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,6 @@
 		91D5D06420C7CBAD00F503EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91D5D06F20C7CBD000F503EC /* SSFLineGraphProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSFLineGraphProtocol.swift; sourceTree = "<group>"; };
 		91D5D07020C7CBD000F503EC /* SSFScatterGraphProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSFScatterGraphProtocol.swift; sourceTree = "<group>"; };
-		91D5D07120C7CBD000F503EC /* SSFGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSFGraphView.swift; sourceTree = "<group>"; };
 		91D5D07220C7CBD000F503EC /* SSFLineGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSFLineGraphView.swift; sourceTree = "<group>"; };
 		91D5D07320C7CBD000F503EC /* SSFBarGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSFBarGraphView.swift; sourceTree = "<group>"; };
 		91D5D07420C7CBD000F503EC /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -76,6 +76,8 @@
 		91D5D08720C902BA00F503EC /* BarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
 		91D5D08920C902C600F503EC /* LineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
 		91D5D08B20C902D600F503EC /* ScatterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScatterViewController.swift; sourceTree = "<group>"; };
+		91D5D08F20C9274600F503EC /* CustomGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGraphView.swift; sourceTree = "<group>"; };
+		91D5D09120C92B7800F503EC /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,8 @@
 				91D5D08720C902BA00F503EC /* BarViewController.swift */,
 				91D5D08920C902C600F503EC /* LineViewController.swift */,
 				91D5D08B20C902D600F503EC /* ScatterViewController.swift */,
+				91D5D09120C92B7800F503EC /* CustomViewController.swift */,
+				91D5D08F20C9274600F503EC /* CustomGraphView.swift */,
 			);
 			path = SSFGraph;
 			sourceTree = "<group>";
@@ -140,15 +144,14 @@
 		91D5D06E20C7CBD000F503EC /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				91D5D06F20C7CBD000F503EC /* SSFLineGraphProtocol.swift */,
-				91D5D07020C7CBD000F503EC /* SSFScatterGraphProtocol.swift */,
-				91D5D07120C7CBD000F503EC /* SSFGraphView.swift */,
-				91D5D07220C7CBD000F503EC /* SSFLineGraphView.swift */,
-				91D5D07320C7CBD000F503EC /* SSFBarGraphView.swift */,
 				91D5D07420C7CBD000F503EC /* Utility.swift */,
 				91D5D07520C7CBD000F503EC /* SSFGraph.swift */,
-				91D5D07620C7CBD000F503EC /* SSFScatterGraphView.swift */,
+				91D5D07320C7CBD000F503EC /* SSFBarGraphView.swift */,
 				91D5D07720C7CBD000F503EC /* SSFBarGraphProtocol.swift */,
+				91D5D07220C7CBD000F503EC /* SSFLineGraphView.swift */,
+				91D5D06F20C7CBD000F503EC /* SSFLineGraphProtocol.swift */,
+				91D5D07620C7CBD000F503EC /* SSFScatterGraphView.swift */,
+				91D5D07020C7CBD000F503EC /* SSFScatterGraphProtocol.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -287,9 +290,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				91D5D04D20C7CAE900F503EC /* ViewController.swift in Sources */,
+				91D5D09220C92B7800F503EC /* CustomViewController.swift in Sources */,
 				91D5D08820C902BA00F503EC /* BarViewController.swift in Sources */,
 				91D5D08A20C902C600F503EC /* LineViewController.swift in Sources */,
 				91D5D04B20C7CAE900F503EC /* AppDelegate.swift in Sources */,
+				91D5D09020C9274600F503EC /* CustomGraphView.swift in Sources */,
 				91D5D08C20C902D600F503EC /* ScatterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +303,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91D5D07A20C7CBD000F503EC /* SSFGraphView.swift in Sources */,
 				91D5D07920C7CBD000F503EC /* SSFScatterGraphProtocol.swift in Sources */,
 				91D5D07D20C7CBD000F503EC /* Utility.swift in Sources */,
 				91D5D07F20C7CBD000F503EC /* SSFScatterGraphView.swift in Sources */,

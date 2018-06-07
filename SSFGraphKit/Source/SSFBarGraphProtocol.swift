@@ -11,6 +11,7 @@ import UIKit
 
 protocol SSFBarGraphProtocol {
     func barGraph(sourceData: [(String, Double)], barColor: UIColor, textColor: UIColor, textFont: UIFont, strokeColor: UIColor) -> Diagram
+    func spaceLineDistanceFromTop(diagram: Diagram, rect: CGRect) -> CGFloat?
 }
 
 extension SSFBarGraphProtocol {
@@ -25,5 +26,11 @@ extension SSFBarGraphProtocol {
             return Diagram.text(theText: string, width: 1, height: 0.3, textAttribute: attribute).aligned(to: CGPoint.top)
             }.hcat
         return bars---labels
+    }
+    
+    func spaceLineDistanceFromTop(diagram:Diagram, rect: CGRect) -> CGFloat? {
+        var points = [(CGPoint, CGRect)]()
+        diagram.pointsOfPrimitive(rect, direction: .topBorder, primitiveType: .text("",[.textColor: UIColor.black]), points: &points)
+        return points.map {$0.0}.reject {$0.x.isNaN || $0.y.isNaN}.first?.y
     }
 }
