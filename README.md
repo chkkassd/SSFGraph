@@ -88,12 +88,12 @@ let greenCircle = Diagram.circle(diameter: 80.0)
 let orangeText = Diagram.text(theText: "James Harden", width: 50.0, height: 10.0, textAttribute: [TextAttribute.font: UIFont.systemFont(ofSize: 20.0), TextAttribute.textColor: UIColor.orange])
 ```
 > TextAttribute是enum用以描述文字属性
-    > ```swift
-    public enum TextAttribute {
-    case font
-    case textColor
-    }
-    ```
+ ```swift
+        public enum TextAttribute {
+        case font
+        case textColor
+         }
+```
 #### 图表的填充色
 ```swift
 blueRect.filled(UIColor.blue)
@@ -110,10 +110,9 @@ blueRect.aligned(to: CGPoint.top)
 ```swift
 let combinedDiagram = blueRect|||redSquare|||greenCircle---orangeText
 ```
-|拼接操作符|效果|
-|---|---|
-|`|||`|水平方向拼接2个图表|
-|`---`|垂直方向拼接2个图表|
+> 拼接操作符
+>> `|||`:水平方向拼接2个图表
+>>> `---`:垂直方向拼接2个图表
 
 #### 一个自定义拼装图表的例子
 ```swift
