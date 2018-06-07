@@ -24,6 +24,9 @@
 		91D5D07E20C7CBD000F503EC /* SSFGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D07520C7CBD000F503EC /* SSFGraph.swift */; };
 		91D5D07F20C7CBD000F503EC /* SSFScatterGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D07620C7CBD000F503EC /* SSFScatterGraphView.swift */; };
 		91D5D08020C7CBD000F503EC /* SSFBarGraphProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D07720C7CBD000F503EC /* SSFBarGraphProtocol.swift */; };
+		91D5D08820C902BA00F503EC /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D08720C902BA00F503EC /* BarViewController.swift */; };
+		91D5D08A20C902C600F503EC /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D08920C902C600F503EC /* LineViewController.swift */; };
+		91D5D08C20C902D600F503EC /* ScatterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5D08B20C902D600F503EC /* ScatterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		91D5D07520C7CBD000F503EC /* SSFGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSFGraph.swift; sourceTree = "<group>"; };
 		91D5D07620C7CBD000F503EC /* SSFScatterGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSFScatterGraphView.swift; sourceTree = "<group>"; };
 		91D5D07720C7CBD000F503EC /* SSFBarGraphProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSFBarGraphProtocol.swift; sourceTree = "<group>"; };
+		91D5D08720C902BA00F503EC /* BarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
+		91D5D08920C902C600F503EC /* LineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
+		91D5D08B20C902D600F503EC /* ScatterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScatterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +119,11 @@
 			isa = PBXGroup;
 			children = (
 				91D5D08220C7CBF200F503EC /* Supporting */,
-				91D5D04C20C7CAE900F503EC /* ViewController.swift */,
 				91D5D04E20C7CAE900F503EC /* Main.storyboard */,
+				91D5D04C20C7CAE900F503EC /* ViewController.swift */,
+				91D5D08720C902BA00F503EC /* BarViewController.swift */,
+				91D5D08920C902C600F503EC /* LineViewController.swift */,
+				91D5D08B20C902D600F503EC /* ScatterViewController.swift */,
 			);
 			path = SSFGraph;
 			sourceTree = "<group>";
@@ -278,7 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				91D5D04D20C7CAE900F503EC /* ViewController.swift in Sources */,
+				91D5D08820C902BA00F503EC /* BarViewController.swift in Sources */,
+				91D5D08A20C902C600F503EC /* LineViewController.swift in Sources */,
 				91D5D04B20C7CAE900F503EC /* AppDelegate.swift in Sources */,
+				91D5D08C20C902D600F503EC /* ScatterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
