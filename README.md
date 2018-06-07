@@ -61,4 +61,4 @@ github "chkkassd/SSFGraph"
 * 邮箱:peter1990lynn@gmail.com
 
 ## 版权
-SSFGraph is released under the MIT license.[See LICENSE]()for details.
+SSFGraph is released under the MIT license.[See LICENSE](https://github.com/chkkassd/SSFGraph/blob/master/LICENSE)for details.
